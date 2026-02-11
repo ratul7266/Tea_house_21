@@ -26,6 +26,67 @@
   </head>
   <body class="">
     <header>
+      <nav class="bg-gray-900 text-white shadow-md">
+        <div
+          class="container mx-auto px-6 py-4 flex justify-between items-center"
+        >
+          <!-- Logo -->
+          <div class="text-2xl font-bold">Gong Cha-Tea House</div>
+
+          <!-- Menu Links (hidden on mobile) -->
+          <ul class="hidden md:flex space-x-8">
+            <li>
+              <a href="#" class="hover:text-yellow-400 transition">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-400 transition">Review</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-400 transition">Login</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-400 transition">Sign Up</a>
+            </li>
+          </ul>
+
+          <!-- Hamburger Menu (mobile) -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+          <ul class="flex flex-col space-y-3 px-6 py-4">
+            <li>
+              <a href="#" class="hover:text-yellow-400 transition">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-400 transition">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-400 transition">Services</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-yellow-400 transition">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <section class="grid grid-cols-1 md:grid-cols-2 container mx-auto">
         <div class="banner-right space-y-[30px]">
           <h1 class="text-[80px] font-bold">
